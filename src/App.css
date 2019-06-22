@@ -23,6 +23,64 @@
   color: #61dafb;
 }
 
+.Lobby-container {
+  background-color: #282c34;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Login-box {
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border: 1px solid lightblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Login-box .Content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Login-box input {
+  background-color: #282c34;
+  border-color: black;
+  margin: 5px;
+  color: lightblue;
+  padding-left: 5px;
+  font-size: 1.1em;
+}
+
+.Login-box button {
+  background-color: #282c34;
+  border-color: lightblue;
+  border-radius: 100px;
+  margin: 5px;
+  color: lightblue;
+  height: 40px;
+  width: 45%;
+  margin-top: 10px;
+}
+
+.Login-box ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightblue;
+  opacity: 0.5; /* Firefox */
+}
+
+.App-title {
+  text-align: center;
+  color: lightblue;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

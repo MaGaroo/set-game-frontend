@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Lobby } from './lobby/Lobby.js';
+
+const LOBBY = 0;
+const ROOM = 1;
+
+class App extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      location: LOBBY,
+    }
+  }
+
+  createRoom(room) {
+    //crateRoomAPI(room);
+  }
+
+  render() {
+    if (this.state.location === LOBBY) {
+      return (
+        <Lobby />
+      );
+    }
+    else {
+      return (
+        <div> </div>
+      );
+    }
+  }
 }
 
 export default App;
